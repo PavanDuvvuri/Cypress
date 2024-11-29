@@ -1,7 +1,7 @@
 import { enrollPageSelectors } from "../support/selectors/enroll/enrollPage";
 
 describe('Course enrollment',() => {
-    it('Login',()=> {
+    it('Enrollment',()=> {
         cy.visit("https://freelance-learn-automation.vercel.app/login")
         cy.get(enrollPageSelectors.email).type('testuser@automation.com')
         cy.get(enrollPageSelectors.pwd).type('Password123')
